@@ -1,8 +1,7 @@
 ---
-- name: install app
-  hosts: terra_ansible_host
-  gather_facts: no
-  become: true
+  - name: 'Provision Image'
+    hosts: all
+    become: true
 
   tasks:
     - name: Install git.
